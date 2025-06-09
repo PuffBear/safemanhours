@@ -7,12 +7,12 @@ import time
 st.set_page_config(page_title="Safety Dashboard", layout="wide")
 st.markdown("""
 <div style="background-color:#0f4c75;padding:10px;border-radius:10px">
-    <h2 style="color:white;text-align:center;">Safety Dashboard – Daily Swaraj P3 </h2>
+    <h2 style="color:white;text-align:center;">Daily Safety Dashboard – Swaraj P3 </h2>
 </div>
 """, unsafe_allow_html=True)
 
 # ----------------- Columns Setup -----------------
-left, right = st.columns([1, 1.5])
+left, right = st.columns([1, 1])
 
 # ----------------- LEFT COLUMN -----------------
 with left:
@@ -21,7 +21,7 @@ with left:
     # Input Fields
     manpower = st.number_input("Enter No. of Workers", min_value=1, value=400)
     shift_hours = 8.5
-    total_shift_seconds = int(shift_hours * 60 * 60)  # 30600 seconds
+    total_shift_seconds = int(shift_hours * 60 * 60)  # total: 30600 seconds
 
     # Shift Timing
     shift_start = dt_time(8, 30)
